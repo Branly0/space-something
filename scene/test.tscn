@@ -1,3 +1,10 @@
 [gd_scene format=3 uid="uid://b80tf58bifmc"]
 
+[ext_resource type="Script" uid="uid://c6ncgtsgn3ar3" path="res://scripts/test.gd" id="1_fghjm"]
+[ext_resource type="PackedScene" uid="uid://clol47yoqvs48" path="res://scene/actors/ship.tscn" id="2_bp0px"]
+
 [node name="test" type="Node2D" unique_id=1757086681]
+script = ExtResource("1_fghjm")
+
+[node name="ship" parent="." unique_id=839370624 instance=ExtResource("2_bp0px")]
+position = Vector2(384, 563)

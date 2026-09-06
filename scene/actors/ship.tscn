@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://clol47yoqvs48"]
+
+[ext_resource type="Texture2D" uid="uid://bshw4oi2lyu0p" path="res://icon.svg" id="1_qgmw5"]
+[ext_resource type="Script" uid="uid://dqm0pb4omq2rj" path="res://scripts/actors/ship.gd" id="1_s38vy"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_dt3fd"]
+radius = 9.0
+height = 42.0
+
+[node name="ship" type="RigidBody2D" unique_id=839370624]
+script = ExtResource("1_s38vy")
+
+[node name="Icon" type="Sprite2D" parent="." unique_id=644351423]
+position = Vector2(0, 8.940697e-08)
+scale = Vector2(0.15625, 0.34375)
+texture = ExtResource("1_qgmw5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=192060674]
+shape = SubResource("CapsuleShape2D_dt3fd")
